@@ -1,0 +1,9 @@
+package com.reto.videojuegos.dto;
+
+import jakarta.validation.constraints.*;
+
+public record JuegoFisicoRequest(
+        @NotBlank(message = "El título es obligatorio") String titulo,
+        @Min(value = 1950, message = "El año debe ser válido") int anioLanzamiento,
+        @Positive(message = "El precio base debe ser mayor a 0") double precioBase,
+        @Positive(message = "El peso debe ser mayor a 0") double pesoGramos) {}
