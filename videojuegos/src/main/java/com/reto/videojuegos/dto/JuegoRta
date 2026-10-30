@@ -1,0 +1,5 @@
+// dto/JuegoResponse.java
+package com.reto.videojuegos.dto;
+
+public record JuegoRta(Long id, String titulo, int anioLanzamiento, double precioBase,
+                            boolean disponible, String tipo, Double pesoGramos, Double tamanoGB) {}
